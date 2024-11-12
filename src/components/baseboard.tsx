@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 
 type Quote = {
     id: number,
-    phrasal: string,
+    phrase: string,
     author: string
 }
 
@@ -55,7 +55,7 @@ export const Baseboard = () => {
                         md:text-2xl
                         "
                     >
-                        {item.phrasal}
+                        {item.phrase}
                     </div>
                     <div className="text-sm text-center [text-shadow:_1px_2px_2px_#000000] md:text-xl">
                         {item.author}
