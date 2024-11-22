@@ -29,11 +29,11 @@ export const Baseboard = () => {
     }
 
     return (
-        <div className="flex flex-col items-center px-1 pb-1 h-24 md:px-0 md:h-28 place-content-end">
+        <div className="px-1 pb-1 h-32 md:px-0 place-content-end">
             {!loading &&
                 <div className="
-                    text-base text-center font-semibold [text-shadow:_1px_2px_2px_#000000] md:w-4/5
-                    md:text-2xl
+                    text-base text-center font-semibold [text-shadow:_1px_2px_2px_#000000] mx-auto
+                    md:w-4/5 md:text-2xl
                     "
                 >
                     Carregando...⏳
@@ -41,15 +41,15 @@ export const Baseboard = () => {
             }
             {loading && quotes.length === 0 &&
                 <div className="
-                    text-base text-center font-semibold [text-shadow:_1px_2px_2px_#000000] md:w-4/5
-                    md:text-2xl
+                    text-base text-center font-semibold [text-shadow:_1px_2px_2px_#000000] mx-auto
+                    md:w-4/5 md:text-2xl
                     "
                 >
                     Ocorreu algum erro no carregamento da citação.🛠️⚙️
                 </div>
             }
             {loading && quotes.length > 0 &&
-                <div className="md:w-4/5">
+                <div className="mx-auto md:w-4/5">
                     <div className="
                         text-base text-center font-semibold italic [text-shadow:_1px_2px_2px_#000000]
                         md:text-2xl
